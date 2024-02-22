@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Cack </title>
+</head>
+<link rel="icon" href="/assets/image/banner2.jpg">
+
+<!-- home -->
+<style>
+    nav ul li a{
+
+    display: compact;
+    color: #ffffff;
+
+    }
+    nav ul li a:hover {
+        /*display: inline-block;*/
+        /*padding: 14px 60px;*/
+        background-color:rosybrown;
+    }
+    table {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-color: black;
+        width: 400px;
+        border-collapse: collapse;
+    }
+    {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    th {
+        border: 1px solid black;
+        background-color: #ffffff;
+    }
+    td {
+        border: 1px solid #00ffbb;
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        text-align: left;
+    }
+    button{
+        background-color: rgb(255, 255, 255);
+    }
+    body>header>section:nth-child(2)>nav>menu {
+        list-style: none;
+        margin: 0;
+    }
+
+    body>header>section:nth-child(2)>nav>menu>li>a {
+        text-decoration: none;
+        color: white;
+        z-index: 2;
+    }
+
+    body>header>section:nth-child(2)>nav {
+        position: absolute;
+        top: 10px;
+        right: 40px;
+    }
+
+    body>header>section:nth-child(2)>nav>menu>li {
+        display: inline-block;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body>header>section:nth-child(2)>nav>menu>li>a:hover {
+        transition-duration: 0.2s;
+        transition-property: color;
+        color: #00ffbb;
+    }
+
+    body>header>section:nth-child(2)>nav>menu>li>a:active {}
+
+    body>header>section:nth-child(2)>nav>menu>li:last-of-type {
+        padding-right: 4px;
+    }
+
+    body>header>section:nth-child(2)>div:nth-child(3) {
+        visibility: hidden;
+    }
+    /*contact*/
+    .last-text {
+        width: 100%;
+        text-align: center;
+        padding: 25px 0;
+        background: rgb(153, 167, 168);
+        font-weight: 300;
+        margin-top: 70px;
+    }
+    
+    /*image{*/
+    /*    background: 500px;*/
+    /*}*/
+
+    .top {
+        position: fixed;
+        bottom: 2.1rem;
+        right: 2.1rem;
+        margin-right: 3.5rem;
+
+    }
+    .top i {
+        color: #000000;
+        background: #8f8585;
+        font-size: 20px;
+        padding: 8px;
+        border-radius: 0.5rem;
+
+
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 3rem;
+        padding-left: 30px;
+        margin-top: 130px;
+    }
+
+    .contact img {
+        height: 300px;
+        width: 300px;
+        opacity: 0.2;
+        border-radius: 50%;
+    }
+
+    .contact-text h2 {
+        font-size: 90px;
+        line-height: 1;
+        text-align: left;
+        color: #8f8585;
+    }
+
+    .contact-text h2 span {
+        color: #ffffff;
+    }
+
+    .contact-text h4 {
+        margin: 15px 0;
+        color: rgb(228, 228, 228);
+        font-size: 20px;
+        font-weight: 30px;
+        margin-bottom: 2rem;
+    }
+
+    .contact-text p {
+        color: rgb(163, 163, 163);
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 2rem;
+    }
+
+    .contact-list {
+        margin-bottom: 3rem;
+        color: #8f8585;
+        /* margin-left: 20px; */
+    }
+
+    .contact-list li {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .contact-list i {
+        display: inline-block;
+        color: #99a7a8;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .contact-list li a:hover {
+        color: #99a7a8;
+    }
+
+    .contact-icons i {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid #99a7a8;
+        border-radius: 50%;
+        font-size: 20px;
+        color: #99a7a8;
+        text-decoration: none;
+        margin: 30px 15px 30px 0;
+
+    }
+
+    .contact-icons i:hover {
+        background: #99a7a8;
+        color: #000000;
+        box-shadow: 0 0 20px #8f8585;
+    }
+
+    .contact-form form {
+        position: relative;
+    }
+
+    .contact-form form input,
+    form textarea {
+        border: none;
+        outline: none;
+        width: 90%;
+        padding: 18px;
+        background: #555555;
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        border-radius: 0.5rem;
+    }
+
+    .contact-form textarea {
+        resize: none;
+        height: 220px;
+    }
+
+    .contact-form form .send {
+        display: inline-block;
+        padding: 14px 60px;
+        background: #99a7a8;
+        border-radius: 40px;
+        font-size: 18px;
+        color: #070a0a;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-weight: 600;
+        box-shadow: 0 0 5px rgb(7, 10, 10),
+        0 0 25px #110a0a;
+    }
+
+    .contact-form form .send:hover {
+        box-shadow: 0 0 5px #1f5e29,
+        0 0 25px #110a0a, 0 0 50px #070a0a,
+        0 0 100px #110a0a, 0 0 200px #110a0a;
+    }
+
+/*home*/
+    /*
+    baground color
+    */
+    body {
+        overflow-x: hidden;
+        background: #1e1e1e;
+    }
+
+    .header-1 {
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        background: #1e1e1e;
+    }
+
+    .head {
+        width: 1200px;
+        max-width: 95%;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    header {
+        padding: 40px 0 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logo {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo .logo-text {
+        font-size: 34px;
+        font-weight: 500;
+        color: #fff;
+        margin-top: 5px;
+
+    }
+
+    nav .New {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 45px;
+        right: 3%;
+        z-index: 5;
+        cursor: pointer;
+        display: none;
+    }
+
+    nav .New span {
+        display: block;
+        background-color: #ffffff;
+        margin: 5px 0px;
+        width: 100%;
+        height: 3px;
+        transition: 0.3s;
+        transition-property: transform, opacity;
+    }
+
+    nav .nav {
+        list-style-type: none;
+        font-size: 26px;
+        margin-top: 5px;
+    }
+
+    nav .nav li {
+        display: inline-block;
+    }
+
+    nav .nav li a {
+        color: #e5e5e5;
+        margin-right: 2.5rem;
+    }
+
+    nav .nav li a:hover {
+        color: #110a0a;
+    }
+
+    @media screen and (max-width: 1400px){
+
+        #start {
+            width: 100vw;
+        }
+        .about-container {
+            flex-wrap: wrap;
+        }
+
+        .section-p1,
+        .sub-title {
+            margin-left: 12%;
+        }
+
+        .section-pic-container {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            margin-right: 10%;
+        }
+
+        #experience {
+            height: 100vh;
+        }
+
+        #projects {
+            height: 100vh;
+            margin-top: 60vh;
+        }
+        #my_edu_quali{
+            height: 100vh;
+        }
+
+    }
+
+    /*#rcorners2 {*/
+    /*    border-radius: 25px;*/
+    /*    border: 2px solid #ffffff;*/
+    /*    padding: 20px;*/
+    /*    width: 200px;*/
+    /*    height: 150px;*/
+    /*}*/
+
+    .home-content h2 {
+        color: #e5e5e5;
+        font-size: 20px;
+    }
+
+    .home-content h2 span {
+        color: #0ef;
+        font-size: 20px;
+    }
+    /*.container {*/
+    /*    display: flex; !* Use flexbox *!*/
+    /*    justify-content: space-between; !* Distribute space between the divs *!*/
+    /*}*/
+
+    /*.box {*/
+    /*    flex: 1; !* Each div takes equal space *!*/
+    /*    border: 5px solid black; !* Optional: Adds borders for visualization *!*/
+    /*    padding: 40px; !* Optional: Adds padding for spacing *!*/
+    /*    text-align: center; !* Optional: Centers content horizontally *!*/
+    /*}*/
+
+
+</style>
+<!--home-->
+<body>
+
+<img src="/assets/image/banner2.jpg" style=" width: 1500PX; height: 300PX;" alt="This is  Rose flower in  FOREST">
+<h2 style="color: white;text-align:center;">  ❤ Welcome To My Cack Home...   Have a Nice Day... ❤ </h2>
+<section id="start">
+    <div class="header-1">
+        <div class="head">
+            <header>
+                <div class="logo">
+                    <div class="logo-text">SACHI CACK HOME 🎂 🎂 </div>
+                </div>
+                <nav>
+                    <div class="New">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav">
+                        <li><a href="#container">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <!--<li><a href="#experience">Our Product</a></li>-->
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <p style="color: white">=================================================================================================================================</p>
+
+<!--set image-->
+            <h2 style="color: white" >You Can Order == > <span style="color:rosybrown" class="input"> SACHI CACK HOME </span></h2>
+            <br>
+   <section class="container">
+<ul class="box">
+    <figure>
+    <img id=" #rcorners2" src="/assets/image/cack.jpg" style="width: 200PX; height: 200PX;
+    border-radius: 25px;
+        border: 2px solid #ffffff;
+        padding: 20px;
+        width: 200px;
+        height: 150px;" alt="This is choco cack">
+<!--
+   <figcaption style="color: white">Chocolate cack</figcaption>
+-->
+
+    <a href="http://localhost:63342" tabindex="_blank" style="text-decoration: none; color: black;"></a>
+    <li style="color: white;"><a style="color: white" href="/pages/cack1.html" target="_blank"> Chocolate cack</a></li>
+    </figure>
+    <br />
+    <figure>
+    <img  src="/assets/image/stobary cack.jpeg" style="width: 200PX; height: 200PX; border-radius: 25px;
+        border: 2px solid #ffffff;
+        padding: 20px;
+        width: 200px;
+        height: 150px; " alt="This is choco cack">
+
+    <a href="http://localhost:63342" tabindex="_blank" style="text-decoration: none; color: black; "></a>
+    <li style="color: white"><a style="color: white" href="/pages/cack2.html" target="_blank"> Cherry Almond Cake</a></li>
+    </figure>
+    <br />
+    <figure>
+    <img src="/assets/image/color cack.jpeg" style="width: 200PX; height: 200PX;border-radius: 25px;
+        border: 2px solid #ffffff;
+        padding: 20px;
+        width: 200px;
+        height: 150px;" alt="This is choco cack">
+    <a href="http://localhost:63342" tabindex="_blank" style="text-decoration: none; color: black;"></a>
+    <li style="color: white"><a style="color: white" href="/pages/cack3.html" target="_blank">Ribbon Cack</a></li>
+    </figure>
+    <br>
+    <figure>
+    <img src="/assets/image/cack5.jpeg" style="width: 200PX; height: 200PX;border-radius: 25px;
+        border: 2px solid #ffffff;
+        padding: 20px;
+        width: 200px;
+        height: 150px;" alt="This is choco cack">
+    <a href="http://localhost:63342" tabindex="_blank" style="text-decoration: none; color: black;"></a>
+    <li style="color: white" ><a style="color: white"href="/pages/cack4.html" target="_blank"> Stobary cack</a></li>
+    </figure>
+    <br />
+    <figure>
+    <img src="/assets/image/rata2 cack.jpeg" style="width: 200PX; height: 200PX;border-radius: 25px;
+        border: 2px solid #ffffff;
+        padding: 20px;
+        width: 200px;
+        height: 150px;" alt="This is choco cack">
+    <a href="http://localhost:63342" tabindex="_blank" style="text-decoration: none; color: black;"></a>
+    <li style="color: white"><a style="color: white"href="/pages/cack5.html" target="_blank"> Easiest Vanilla Birthday Cake</a></li>
+    </figure>
+    <br />
+    <figure>
+    <img src="/assets/image/cup cack.jpeg" style="width: 200PX; height: 200PX;border-radius: 25px;
+        border: 2px solid #ffffff;
+        padding: 20px;
+        width: 200px;
+        height: 150px;" alt="This is choco cack">
+    <a href="http://localhost:63342" tabindex="_blank" style="text-decoration: none; color: black;"></a>
+    <li style="color: white" ><a style="color: white" href="/pages/cack6.html" target="_blank"> Cup cack</a></li>
+    </figure>
+    <br />
+    <figure>
+    <img src="/assets/image/wd cack.jpeg" style="width: 200PX; height: 200PX;border-radius: 25px;
+        border: 2px solid #ffffff;
+        padding: 20px;
+        width: 200px;
+        height: 150px;" alt="This is choco cack">
+    <a href="http://localhost:63342" tabindex="_blank" style="text-decoration: none; color: black;"></a>
+    <li style="color: white"><a style="color: white" href="cack7.html" target="_blank"> Wedding cack</a></li>
+    </figure>
+    <br />
+    <figure>
+    <img src="/assets/image/wdd cup.jpeg" style="width: 200PX; height: 200PX;border-radius: 25px;
+        border: 2px solid #ffffff;
+        padding: 20px;
+        width: 200px;
+        height: 150px;" alt="This is choco cack">
+    <a href="http://localhost:63342" tabindex="_blank" style="text-decoration: none; color: black;"></a>
+    <li style="color: white"  ><a style="color: white" href="cack8.html" target="_blank"> Wedding Cup cack</a></li>
+    </figure>
+</ul>
+   </section>
+            <br>
+<!--&lt;!&ndash; contact &ndash;&gt;-->
+<!--<h2>Contact  Us</h2>-->
+<!--<form action="https//" method="get">-->
+<!--    <label for="name:" > Name:</label>-->
+<!--    <input type="text" name="fullName" placeholder="Enter Your Name" required/>-->
+<!--    <br />-->
+<!--    <label for="email:" > Email:</label>-->
+<!--    <input type="text" name="email" placeholder="Enter Your Email" required/>-->
+<!--    <br />-->
+<!--    <label for="massage:" > Massage:</label>-->
+<!--    <textarea name="massage" id="" cols="50" rows="10" placeholder="Enter Your massage...."></textarea>-->
+<!--    <br />-->
+<!--    <label for="" > +94 71 3627595</label>-->
+<!--    <br />-->
+<!--    <label for="" > asachini095@gmail.com</label>-->
+<!--    <br />-->
+<!--    <input type="button" value="Cancle"/>-->
+<!--    <button type="submit">Submit</button>-->
+
+            <p style="color: white">=================================================================================================================================</p>
+
+            <!--about-->
+            <section class="about-container" id="about-container">
+                <div class="contact-text">
+                    <h2> ❤ About <span>Cack Home</span></h2>
+
+                    <h4 style="color:white"><b>Let's work together</b></h4>
+                    <p>Our journey began with one humble shop in Fort, Mumbai and grew to over one thousand locations throughout India under the inspiring vision of our founder, Hussein Khorakiwala in the early 1956. Since then, our family has combined their years of experience with the vision of a community of collaborative shop owners, suppliers and other partners working together to create a brand name in the market to grow their business to what it is today.
+                        In order to achieve this, the family offers franchises to budding entrepreneurs & distributors partnering with them to ensure success and excellence.</p>
+                    <!-- <img src="img/profile-pic.jpg" alt=""> -->
+                    <h4 style="color:white"><b>Our Secret</b></h4>
+                    <p>Monginis only uses the finest ingredients in its products, ensuring the goods that we send out into the market are of the utmost quality. Monginis believes in order to give the Real taste of any product, real ingredients should be used & not cheaper substitutes. Our production includes a highly-customized, automated system but does not forego the importance of the human touch, while still adhering to strict quality control measures at every stage of production, packaging, and delivery.
+
+                        Combining technology and people is what ensures that our products are the best. Without our dedicated, skilled, and loyal team members, Monginis would not be where it is today.</p>
+
+                </div>
+            </section>
+            <br>
+<!--</form>-->
+            <p style="color: white">=================================================================================================================================</p>
+<!--contact-->
+        <section class="contact" id="contact">
+            <div class="contact-text">
+                <h2> Contact <span> Me </span></h2>
+
+        <h4 style="color:gainsboro"><b>Let's work together</b></h4>
+        <p>Feel free to reach out, and let's embark on a collaborative journey! I am passionate about creating innovative solutions and would love the opportunity to work together. Your ideas and projects matter, and I am here to bring them to life.Let's turn your visions into reality and create something amazing together</p>
+        <!-- <img src="img/profile-pic.jpg" alt=""> -->
+
+        <div class="contact-list">
+            <li><i class="fa-solid fa-at"></i> <b> ✨ Email :asachini095@gmail.com</b></li>
+            <li><i class="fa-solid fa-phone-volume"></i> <b> ✨ Phone Number :+94 71 3627595</b> </li>
+
+        </div>
+        <p> 😎 Find Me On: </p>
+        <div class="contact-icons">
+            <a href="https://github.com/ApsaraWitharana" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sachini-apsara-840067299" target="_blank">
+                <i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <form action="">
+            <input type="" placeholder="Enter Your Name" required>
+            <input type="email" placeholder="Enter Your Email" required>
+            <input type="" placeholder="Enter Your Subject">
+            <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+            <input type="submit" value="submit" class="send">
+        </form>
+    </div>
+        </div>
+    </div>
+      </section>
+
+
+<div class="last-text">
+    <p>Developed with love by sachini &copy; 2024</p>
+</div>
+<a href="#" class="top">
+    <i class="fa-solid fa-arrow-turn-up"></i>
+</a>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+<script>
+    var toggleBtn = document.querySelector(".New");
+    var nav = document.querySelector(".nav");
+    var links = document.querySelector(".nav li");
+
+    toggleBtn.addEventListener("click", function () {
+        console.log("clicked");
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+        console.log("Navo");
+
+        if (nav.classList.contains("open")) {
+            nav.style.display = "block";
+        } else {
+            nav.style.display = "none";
+        }
+    })
+
+    var typed = new Typed(".input", {
+        strings: ["BirthDay Cack", "Wedding Cack", "Party Cack","BirthDay Cack","Wedding Cup Cack"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true
+    })
+</script>
+</html>
