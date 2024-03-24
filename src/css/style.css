@@ -115,8 +115,6 @@ body>header>section:nth-child(2)>div:nth-child(3) {
     font-size: 20px;
     padding: 8px;
     border-radius: 0.5rem;
-
-
 }
 
 .contact {
@@ -427,3 +425,5 @@ nav .nav li a:hover {
     color:white;
 
 }
+
+
