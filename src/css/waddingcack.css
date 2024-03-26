@@ -1,0 +1,35 @@
+table{
+    border-color: black;
+    width: 400px;
+    height: 300px;
+    scale: inherit;
+    border-collapse: collapse;
+    padding-left: 500px;
+}
+
+th{
+    background-color:rosybrown;
+    border: 2px solid black;
+    text-align: left;
+}
+
+td{
+    background-color:mistyrose;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo .logo-text {
+    font-size: 34px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 5px;
+
+}
