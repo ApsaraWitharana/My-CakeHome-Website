@@ -703,3 +703,28 @@ nav .nav li a:hover {
 
 
 }
+
+/* Base styles */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        width: 1200px;
+    }
+}
