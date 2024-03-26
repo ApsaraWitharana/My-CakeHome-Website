@@ -687,3 +687,19 @@ nav .nav li a:hover {
     }
 }
 
+/*set arrow-run up*/
+.icon {
+    cursor: pointer;
+    height: 2rem;
+
+}
+
+.fa-solid {
+    font-size: 2rem;
+}
+
+#about {
+    position: relative;
+
+
+}
