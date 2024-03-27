@@ -729,3 +729,9 @@ nav .nav li a:hover {
         width: 1200px;
     }
 }
+
+/*set image hover*/
+
+.card img:hover {
+    transform: scale(1.2);
+}
