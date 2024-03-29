@@ -1,7 +1,6 @@
 
 
 nav ul li a{
-
     display: compact;
     color: #ffffff;
 
@@ -9,7 +8,6 @@ nav ul li a{
 body{
     margin: 0;
     width: 1500px;
-
 }
 
 nav ul li a:hover {
@@ -32,6 +30,7 @@ table {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+
 }
 
 th {
@@ -378,10 +377,8 @@ nav .nav li a:hover {
 }
 
 /*set image*/
-
 .card-line{
     display: flex;
-
 }
 
 .container{
@@ -698,8 +695,6 @@ nav .nav li a:hover {
 
 #about {
     position: relative;
-
-
 }
 
 /*set-responsive */
@@ -711,6 +706,7 @@ nav .nav li a:hover {
 
 
 /* Media queries for responsiveness */
+
 @media (max-width: 768px) {
     .container {
         width: 95%;
