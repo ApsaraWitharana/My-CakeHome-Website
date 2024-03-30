@@ -725,6 +725,85 @@ nav .nav li a:hover {
     }
 }
 
+/*set responsive card */
+@media screen and (max-width:575px) {
+
+    .container{
+        display: grid;
+        grid-template-columns:repeat(1 ,1fr);
+
+    }
+    .main-image{
+        width:25%;
+    }
+
+}
+
+@media screen and (min-width:575px) and  (max-width:767px){
+
+    .container{
+        display: grid;
+        grid-template-columns:repeat(2 ,1fr);
+
+    }
+    .main-image{
+        width:50%;
+    }
+
+}
+
+@media screen and (min-width:768px) and  (max-width:991px){
+
+    .container{
+        display: grid;
+        grid-template-columns:repeat(3 ,1fr);
+
+    }
+    .main-image{
+        width:75%;
+    }
+
+}
+
+@media screen and (min-width:992px) and  (max-width:1199px){
+
+    .container{
+        display: grid;
+        grid-template-columns:repeat(3 ,1fr);
+
+    }
+    .main-image{
+        width:95%;
+    }
+
+}
+
+@media screen and (min-width:1200px) and  (max-width:1399px){
+
+    .container{
+        display: grid;
+        grid-template-columns:repeat(4 ,1fr);
+
+    }
+    .main-image{
+        width:auto;
+    }
+
+}
+
+@media screen and (min-width:1400px) {
+
+    .container{
+        display: grid;
+        grid-template-columns:repeat(4 ,1fr);
+
+    }
+    .main-image{
+        width:1470px;
+    }
+
+}
+
 /*set image hover*/
 
 .card img:hover {
